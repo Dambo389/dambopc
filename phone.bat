@@ -7,6 +7,7 @@ Set /p choice="d: "
 if not defined choice goto m1'
 if "%choice%"=="1" (cd adb
 adb reboot)
-if "%choice%"=="2" (cd adb)
+if "%choice%"=="2" (cd adb
+adb tcpip 3890)
 goto m1
 pause
