@@ -5,7 +5,7 @@ Echo 1 - reboot phone
 Echo 2 - remote access
 Set /p choice="d: "
 if not defined choice goto m1'
-if "%choice%"=="1" (cd adb
+if "%choice%"=="1" (cd Dambo
 adb reboot)
 if "%choice%"=="2" (start remote.bat)
 goto m1
