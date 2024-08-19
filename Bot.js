@@ -4,11 +4,14 @@ const { pathfinder, Movements } = require('mineflayer-pathfinder');
 const GoalFollow = require('mineflayer-pathfinder').goals.GoalFollow;
 
 const bot = mineflayer.createBot({
-    host: "localhost",
+    host: "95.28.201.200",
     port:  "25565",
     version:"1.19.4",
     username: "Bot" })
 
+bot.once('spawn', function () {
+    bot.chat('/reg  1234567890 1234567890')
+})
 
 bot.once('spawn', function () {
     bot.chat('вау где я')
